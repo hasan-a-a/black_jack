@@ -6,11 +6,26 @@ body {
 
 }
 h1 {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 50px;
-    color: goldenrod;
+    /* color: goldenrod; */
 }
-.container {
+/* .container {
     text-align: center;
     margin-top: 2rem;
+} */
+.container p {
+    /* color: white; */
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn{
+    width: 200px;
+    /* color: green; */
+    font-size: 20px;
+    font-weight: bold;
+
+}
+#name{
+    padding-top: 2rem;
 }
