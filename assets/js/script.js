@@ -1,0 +1,7 @@
+let playEl = document.getElementById("play")
+let cardEl = document.getElementById("card")
+let sumEl = document.getElementById("sum")
+let startEl = document.getElementById("start")
+let newEl = document.getElementById("new")
+let nameEl = document.getElementById("name")
+document.title = ("BlackJack")
