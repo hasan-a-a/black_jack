@@ -16,17 +16,20 @@ startEl.addEventListener("click",function(){
     playEl.innerHTML = `pick another card?`
     let sum = cards[card01] + cards[card02]
     sumEl.innerHTML = `Sum: ${sum}`
+    if(sum == 21){
+        playEl.innerHTML = `YOU ARE A WINNER`
+    }
+    else{
+        playEl.innerHTML = `YOU ARE A LOOSER`
+    }
+    
     newEl.addEventListener("click",function(){
         for(let i in cards){
             cardEl.innerHTML = `Card: ${cards[card01]} ${cards[card02]} ${cards[i]}`
             let sum = cards[card01] + cards[card02] + cards[i]
             sumEl.innerHTML = `Sum: ${sum}`
-            nameEl.innerHTML = `HASSAN:$200`
+            
 
-        }if(sum == 21){
-            playEl.innerHTML = `YOU ARE A WINNER`
-        }else{
-            playEl.innerHTML = `YOU ARE A LOOSER`
         }
     })
 
