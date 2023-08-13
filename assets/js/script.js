@@ -15,10 +15,14 @@ startEl.addEventListener("click",function(){
     playEl.innerHTML = `pick another card?`
     let sum = cards[card01] + cards[card02]
     sumEl.innerHTML = `Sum: ${sum}`
-    if(sum == 21){
-        playEl.innerHTML = `YOU ARE A WINNER`
-    }else if(sum < 21){
+    let balance = 200
+    let ammount = 50
+    balance -= ammount
+    nameEl.innerHTML = `HASSAN: ${balance}`
+    if(sum < 21){
         playEl.innerHTML = `pick onother card`
+    }else if(sum == 21){
+        playEl.innerHTML = `YOU ARE A WINNER`
     }
     else{
         playEl.innerHTML = `YOU ARE A LOOSER`
@@ -29,11 +33,15 @@ startEl.addEventListener("click",function(){
             cardEl.innerHTML = `Card: ${cards[card01]} ${cards[card02]} ${cards[i]}`
             let sum = cards[card01] + cards[card02] + cards[i]
             sumEl.innerHTML = `Sum: ${sum}`
+            let balance2 = balance
+            let ammount = 50
+            balance2 -= ammount
+            nameEl.innerHTML = `HASSAN: ${balance2}`
             
-            if(sum == 21){
-                playEl.innerHTML = `YOU ARE A WINNER`
-            }else if(sum < 21){
+            if(sum < 21){
                 playEl.innerHTML = `pick onother card`
+            }else if(sum == 21){
+                playEl.innerHTML = `YOU ARE A WINNER`
             }
             else{
                 playEl.innerHTML = `YOU ARE A LOOSER`
