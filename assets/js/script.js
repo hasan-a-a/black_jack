@@ -29,6 +29,8 @@ startEl.addEventListener("click",function(){
             cardEl.innerHTML = `Card: ${cards[card01]} ${cards[card02]} ${cards[i]}`
             let sum = cards[card01] + cards[card02] + cards[i]
             sumEl.innerHTML = `Sum: ${sum}`
+            
+           
             if(sum == 21){
                 playEl.innerHTML = `YOU ARE A WINNER`
             }
