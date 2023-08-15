@@ -1,4 +1,4 @@
-const accounts = [["admin01","123"],["admin02","234"],["admin03","345"]]
+const accounts = [["HASSAN","123"],["ALI","234"],["AHMAD","345"]]
 const loginBtn = document.getElementById ("login")
 const usrnameEl = document.getElementById ("username")
 const passwordEl = document.getElementById ("password")
