@@ -10,6 +10,7 @@ const cards = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 nameEl.innerHTML = `HASSAN:$200`
 logOutBtn.addEventListener("click", function(){
     window.location.replace("login.html")
+  })
 startEl.addEventListener("click",function(){
     let card01 = Math.floor( Math.random(cards)*cards.length)
     let card02 = Math.floor( Math.random(cards)*cards.length)
