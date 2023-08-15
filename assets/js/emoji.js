@@ -24,7 +24,7 @@ const fighters = [
   let logOutBtn = document.getElementById("logout")
   document.title=("Emoji")
   logOutBtn.addEventListener("click", function(){
-    window.location.replace("index.html")
+    window.location.replace("login.html")
   })
   fightButtonEl.addEventListener("click",function(){
     
