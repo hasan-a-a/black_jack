@@ -43,3 +43,18 @@ form{
 #main-log-in{
     padding-top: 55px;
 }
+.page {
+    display: flex;
+    justify-content: space-around;
+}
+.VerticalLine{
+    border-left: solid black;
+    height: 35rem;
+
+}
+.Blackjack img{
+    width: 350px;
+}
+.emoji img{
+    width: 150px;
+}
