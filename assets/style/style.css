@@ -1,4 +1,4 @@
-body {
+.index {
     background-image: url(/assets/pic/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,4 +28,18 @@ h1 {
 }
 #name{
     padding-top: 2rem;
+}
+form{
+    margin: 10px auto;
+    padding: 10px 0;
+}
+.make-colum {
+    width: max-content;
+}
+#logout {
+    float: right;
+    margin: 15px 15px 0 0;
+}
+#main-log-in{
+    padding-top: 55px;
 }
