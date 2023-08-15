@@ -58,3 +58,10 @@ form{
 .emoji img{
     width: 150px;
 }
+#emojiEl {
+    margin-top: 50px;
+}
+#blackjackEL {
+    margin-top: 20px;
+    margin-left: 60px;
+}
