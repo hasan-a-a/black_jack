@@ -15,6 +15,10 @@ nameEl.innerHTML = `HASSAN:$${balance}`;
 log_outEl.addEventListener("click", function(){
     window.location.replace("login.html")
   })
+function getRandomCard() {
+    let randomNumber = Math.floor(Math.random() *13)+1
+    return randomNumber
+}
 startEl.addEventListener("click",function(){
     let card01 = Math.floor( Math.random(cards)*cards.length)
     let card02 = Math.floor( Math.random(cards)*cards.length)
