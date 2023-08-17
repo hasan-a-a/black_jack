@@ -58,7 +58,7 @@ startEl.addEventListener("click",function(){
         }
     })
 resetEl.addEventListener("click",function(){
-    if(sum >= 21 || balance == 0 || isAlive == true){
+    if(sum >= 21 || balance == 0 || isAlive == false){
         location.reload();
         playEl.innerHTML = `Want to play a round?`
         cardEl.innerHTML = `Card:`
