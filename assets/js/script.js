@@ -40,14 +40,13 @@ startEl.addEventListener("click",function(){
       }
     })
     newEl.addEventListener("click",function(){
-        for(let i in cards){
-            cardEl.innerHTML = `Card: ${cards[card01]} ${cards[card02]} ${cards[i]}`
-            let sum = cards[card01] + cards[card02] + cards[i]
-            sumEl.innerHTML = `Sum: ${sum}`
-            let balance2 = balance
-            let ammount = 50
-            balance2 -= ammount
-            nameEl.innerHTML = `HASSAN: ${balance2}`
+        if(isAlive == true){
+            let newCard = getRandomCard()
+            sum += newCard
+            cardEl.innerHTML = ` ${newCard}`;
+            sumEl.innerHTML = `Sum: ${sum}`;
+            balance -= ammount;
+            nameEl.innerHTML = `HASSAN: ${balance}`;
             
             if(sum < 21){
                 playEl.innerHTML = `pick onother card`
