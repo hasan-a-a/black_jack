@@ -59,7 +59,6 @@ startEl.addEventListener("click",function(){
             }
         }
     })
-})
 resetEl.addEventListener("click",function(){
     playEl.innerHTML = `Want to play a round?`
     cardEl.innerHTML = `Card:`
