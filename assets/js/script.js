@@ -9,6 +9,7 @@ let log_outEl = document.getElementById("log_out")
 let balance = 200;
 let ammount = 50;
 let isAlive = false
+let sum = 0
 document.title = "BlackJack"
 // const cards = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 nameEl.innerHTML = `HASSAN:$${balance}`;
@@ -26,7 +27,7 @@ startEl.addEventListener("click",function(){
         let card02 = getRandomCard()
         cardEl.innerHTML = `Card: ${card01} ${card02}`;
         playEl.innerHTML = `pick another card?`;
-        let sum = card01 + card02
+        sum = card01 + card02
         sumEl.innerHTML = `Sum: ${sum}`;
         balance -= ammount;
         nameEl.innerHTML = `HASSAN: ${balance}`;
@@ -40,14 +41,13 @@ startEl.addEventListener("click",function(){
       }
     })
     newEl.addEventListener("click",function(){
-        if(isAlive == true){
+        if(isAlive == true && balance >= 50 && sum < 21){
             let newCard = getRandomCard()
             sum += newCard
-            cardEl.innerHTML = ` ${newCard}`;
+            cardEl.innerHTML += ` ${newCard}`;
             sumEl.innerHTML = `Sum: ${sum}`;
             balance -= ammount;
             nameEl.innerHTML = `HASSAN: ${balance}`;
-            
             if(sum < 21){
                 playEl.innerHTML = `pick onother card`
             }else if(sum == 21){
