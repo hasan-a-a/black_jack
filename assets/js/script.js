@@ -9,9 +9,8 @@ let log_outEl = document.getElementById("log_out")
 let balance = 200;
 let ammount = 50;
 let isAlive = false
-document.title = "BlackJack";
-document.title = ("BlackJack")
-const cards = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+document.title = "BlackJack"
+// const cards = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 nameEl.innerHTML = `HASSAN:$200`
 log_outEl.addEventListener("click", function(){
     window.location.replace("login.html")
