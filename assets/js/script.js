@@ -52,8 +52,7 @@ startEl.addEventListener("click",function(){
                 playEl.innerHTML = `pick onother card`
             }else if(sum == 21){
                 playEl.innerHTML = `YOU ARE A WINNER`
-            }
-            else{
+            }else{
                 playEl.innerHTML = `YOU ARE A LOOSER`
             }
         }
@@ -62,6 +61,6 @@ resetEl.addEventListener("click",function(){
     playEl.innerHTML = `Want to play a round?`
     cardEl.innerHTML = `Card:`
     sumEl.innerHTML = `Sum:`
-    nameEl.innerHTML = `HASSAN:$200`
+    nameEl.innerHTML = `HASSAN:$${balance}`
 })
 
