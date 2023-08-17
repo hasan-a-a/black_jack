@@ -20,25 +20,25 @@ function getRandomCard() {
     return randomNumber
 }
 startEl.addEventListener("click",function(){
-    let card01 = Math.floor( Math.random(cards)*cards.length)
-    let card02 = Math.floor( Math.random(cards)*cards.length)
-    cardEl.innerHTML = `Card: ${cards[card01]} ${cards[card02]}`
-    playEl.innerHTML = `pick another card?`
-    let sum = cards[card01] + cards[card02]
-    sumEl.innerHTML = `Sum: ${sum}`
-    let balance = 200
-    let ammount = 50
-    balance -= ammount
-    nameEl.innerHTML = `HASSAN: ${balance}`
-    if(sum < 21){
-        playEl.innerHTML = `pick onother card`
-    }else if(sum == 21){
-        playEl.innerHTML = `YOU ARE A WINNER`
-    }
-    else{
-        playEl.innerHTML = `YOU ARE A LOOSER`
-    }
-
+    if(isAlive == false){
+        isAlive = true
+        let card01 = getRandomCard()
+        let card02 = getRandomCard()
+        cardEl.innerHTML = `Card: ${card01} ${card02}`;
+        playEl.innerHTML = `pick another card?`;
+        let sum = card01 + card02
+        sumEl.innerHTML = `Sum: ${sum}`;
+        balance -= ammount;
+        nameEl.innerHTML = `HASSAN: ${balance}`;
+        if (sum < 21) {
+            playEl.innerHTML = `pick onother card`;
+        } else if (sum == 21) {
+            playEl.innerHTML = `YOU ARE A WINNER`;
+        } else {
+            playEl.innerHTML = `YOU ARE A LOOSER`;
+        }
+      }
+    })
     newEl.addEventListener("click",function(){
         for(let i in cards){
             cardEl.innerHTML = `Card: ${cards[card01]} ${cards[card02]} ${cards[i]}`
